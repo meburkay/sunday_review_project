@@ -1,0 +1,94 @@
+Topics:
+
+ -- Multi Dimensional Array : container for the arrays
+ -- Methods
+
+=============================================================
+	- Multi Dimensional Array : container for the arrays
+
+
+          *  Two dimensional array:
+
+			 int[][] twoD_arr = new int[10][20];
+
+		  *  Three dimensional array:
+
+			 int[][][] threeD_arr = new int[10][20][30];
+
+=============================================================
+	- Methods
+
+	* Syntax
+		  public static void printHello() {
+
+                System.out.println("Hello");
+            }
+
+    * Reusable code blocks
+				- Passing Arguments
+
+				 public static void printHello(String name){
+                        System.out.println("Hello "+name);
+                    }
+
+				- Passing Multiple Arguments
+
+				 public static void sayHelloFromTo(String from ,String to){
+
+                        System.out.println("Hello " +from +" to " +to );
+
+                    }
+
+				- Hierarchical Method Calls
+
+
+				- Argument and Parameter Data Type Compatibility
+
+		        - void Methods : There is no return type.
+
+		        - Return Methods : method which has return type such as int, double, String, ...
+
+		        - Debug
+
+=============================================================
+
+Tasks:
+
+    Task 1 :   Write a method that can check if a number is even or odd
+
+=============================================================
+
+	Task 2 :   Write a method that can check if a number is prime or not
+
+				Note : Prime numbers are special numbers, greater than 1, that have exactly two factors, themselves and 1
+
+=============================================================
+
+    Task 3 :    Write a method that can remove  all extra space from String , trim() is forbidden
+
+// create a loop --- taking every index one by one with charAt(i)  and compares against ' '   str.charAt(i) == ' '
+don't add empty to result, if not empty add it to result string
+
+    			 Input: "  He ll o "
+        	     Output: Hello
+
+
+=============================================================
+
+    Task 4 :  Write a method that return the absolute difference between n and 21, except return double the absolute difference if n is over 21. (n is int)
+
+    method  parameter : no , or what kibd of data type --- interger
+    method return type : void? --- integer
+
+
+             diff21(19) → 2
+             diff21(10) → 11
+             diff21(23) → 4
+=============================================================
+  Task 5 : Write a method that given 2 int values, return true if either of them is in the range 10..20 inclusive.
+            multiple parameter  --- takes two integers
+            return type --- boolean
+
+             in1020(12, 99) → true
+             in1020(21, 12) → true
+             in1020(8, 99) → false

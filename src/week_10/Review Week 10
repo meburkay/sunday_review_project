@@ -1,0 +1,236 @@
+Topics:
+
+ - ArrayList
+ - Custom Class
+
+
+==========================================
+
+** ArrayList
+
+ArrayList Methods:
+
+	add(Data): adds the data after the last index of the ArrayList
+
+	add(index, Data): inserts the data at the given index
+
+	size(): returns the total number of elements
+
+	get(index): returns the element at the given index
+
+
+	set(index,  Data): replaces the element at given index with the new element.
+
+
+	remove(int index): removes the element at the given index
+
+	remove(Object): removes the given object from arraylist, returns boolean
+
+	clear(): remove all the elements of the arraylist, size will be 0
+
+	indexOf(Data): returns the first matching element's index number, returns int
+
+	lastIndexOf(Data): returns the last matching element's index number, returns int
+
+	contains(Data): returns true if the element is contained in the arraylist, otherwise returns false
+
+	equals(ArrayList): returns true if two arraylists are equal (same elements in same order), otherwise returns false
+
+__________________________________________________
+
+Bulk Operations: argument MUST be a collection type
+
+	addAll(CollectionType): adds collection of values to the arrayList
+	removeAll(CollectionType): removes all the matching elements from the arraylist
+	retainAll(CollectionType): removes all the non-matching elements from the arraylist
+	containsAll(CollectionType): checks if all the elements are contained in the arraylist
+
+_________________________________________________________________
+
+Arrays:
+	asList(array of values) ===> returns the array as collectionType
+
+
+
+__________________________________________________________________
+
+Remove functions:
+	remove(): when we remove one element. DO NOT use it in the loop
+	removeAll(): when we remove multiple elements ( if the elements that we want to remove are known)
+	retainAll(): when we want to retain multiple elements (if the elements that we want to retain are known)
+	removeIf(): when we remove under a condition (if the elements we want to remove are unknown)
+
+===============================================
+
+** Custom Class
+   
+   - An object is an instance of a class. A class is a template or blueprint from which objects are created. So, an object is the instance(result) of a class.
+
+   - A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity.
+___________________________________
+
+   - A class in Java can contain:
+
+   *** Fields
+   *** Methods
+   *** Constructors
+   *** Blocks
+   *** Nested class and interface
+
+____________________________
+
+Syntax to declare a class:
+
+class <class_name>{  
+    field;  
+    method;  
+} 
+
+__________________________________________________
+
+What is instanceVariable?
+
+                - BELONGS OBJECT
+                - it should be creaated in class but outside any type of method
+                - They are attributes of Objects
+                - initilization is not mandatory
+                - we can access via Objects
+
+                        Car c = new Car();
+                            c.instanceVariable="";
+                - They can have some access modifier.We are using only public for now
+
+
+____________________________________________________
+
+What is staticVariable?
+
+                - BELONGS CLASS
+                - Can be used to refer common of all OBJECTS
+                - Gets memory ONLY ONCE  () ADVANTAGE
+                - we can access via ClassName.staticVariable  // more professional
+                - if we change value staticVaraibale it will EFFECT all Objects
+                            Car c=new Car();
+                            Car.staticVariable="BMW";
+
+                            Car c1=new Car();
+                            Car.staticVariable="Ford";
+                 - Initilization is not Mandatory
+
+
+
+===========================================
+
+Tasks:
+
+
+Task 1 : 
+
+Create a method that which is get array list as a parameter then return the numbers which are divisible by 3.
+
+input:
+  
+  numbers : 2,3,4,5,6,8,9
+
+output:
+
+3,6,9
+
+
+Task 2 :
+
+Create a method that get two arraylists as a parameters the return the array which has contains all elements in it.
+
+input: 
+
+first arraylist :1,2,3
+
+second arraylist :4,5,6
+
+output:
+
+1,2,3,4,5,6
+
+
+Task 3 :
+
+Create a method that get two arrays as a parameters then return the arraylist which has contains unique elements in it.
+
+first array :1,2,3,4,5
+
+second array :4,5,6
+
+output:
+
+1,2,3,4,5,6
+ 
+
+
+Task 4 :
+
+1. create a class named Student that has the followings features:
+			Attributes:
+				name, gender, dateOfBirth, age, studentID, grade
+
+			Methods:
+				sets all the attributes of the student object
+				toString(): returns the full info of student Object
+
+2. create a class which is School with main method				
+
+3. create a list of student in School class
+
+4. create a method in School class which is getting list of students as parameter the return the list of students if the name start with "A"				
+
+
+
+Task 5 :
+
+
+		Create a class for BMW
+			- Create these variables in the class:
+			 	- brand,model,color (String),      // BMW,x5,White
+				- price,mileage (double)		   // 20000,10000
+				- year (int)				       // 2015
+				- DOfB(LocalDate)				   // 2015,5,20
+
+
+		- Create these methods :
+			- setInfo() (Or we can use constructor)
+				- parameters: all atributes
+				- returns: void
+				- action: assigns necessary attributes for instance variables.
+
+		- getBrandName()
+			 no parameters, returns the brand variable
+
+		- toString()   generate the toString method as shown in class.
+
+		- Create a class MainClass for BMW
+
+		- Create BMW  objects, call the getBrandName and get methods of the objects
+			- Create an Arraylist to recall ALL BMW that were build before 2017
+			- Create an Arraylist to recall ALL BMW i8 that were build before 2016
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
